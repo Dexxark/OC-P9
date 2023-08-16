@@ -44,12 +44,12 @@ body {
 
 .instagram-logo {
 	width: 100%;
-	height: 100%;
+	height: auto;
 }
 
 .slide-image {
 	width: 100%;
-	height: 100%;
+	height: auto;
 }
 
 #about {
@@ -83,7 +83,7 @@ body {
 
 .nina-image {
 	width: 100%;
-	height: 100%;
+	height: auto;
 }
 
 #about-me {
@@ -257,7 +257,7 @@ input[type="submit"] {
 
 .camera-image {
 	width: 100%;
-	height: 100%;
+	height: auto;
 }
 
 @media all and (max-width: 1180px) {
