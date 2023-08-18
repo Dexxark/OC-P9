@@ -114,8 +114,8 @@ body {
 	justify-content: center;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
-	background-color: #7D7630;
+	color: black;
+	background-color: #BEB45A;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
@@ -170,9 +170,13 @@ body {
 
 #services {
 	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	background-color: #A8D5D8 ;
 	position: relative;
 }
+
 #services .container::before{
 	content: ' ';
 	background-color: #1C6474;
@@ -185,10 +189,11 @@ body {
 }
 
 #services .container {
+	margin: 0px 5%;
 	justify-content: space-between;
 	display: flex;
 	padding : 2em 0;
-
+	gap: 5%;
 }
 
 .service {
@@ -213,7 +218,9 @@ body {
 
 #contact .container {
 	display: flex;
+	gap: 30px;
 }
+
 .picture.right::before {
 	content: ' ';
 	background-color: #BEB45A;
@@ -225,14 +232,18 @@ body {
 	z-index: -1;
 }
 .form-container {
-	flex : 2;
-
-}
-form {
 	display: flex;
 	flex-direction: column;
-	width: 70%;
+	align-items: center;
+	flex : 2;
+}
+
+form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
 	align-items: flex-start;
+	margin-bottom: 40px;
 }
 
 form input {
@@ -257,12 +268,7 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
-.camera-image {
-	width: 100%;
-	height: auto;
-}
-
-@media all and (max-width: 1180px) {
+@media (max-width: 1180px) {
 	.picture {
 		flex : 2;
 	}
@@ -278,7 +284,7 @@ input[type="submit"] {
 	}
 }
 
-@media all and (max-width: 1000px) {
+@media (max-width: 1000px) {
 	#about{
 		flex-direction: column;
 
@@ -337,7 +343,7 @@ input[type="submit"] {
 	}
 }
 
-@media all and (max-width: 650px) {
+@media (max-width: 650px) {
 	.top-header {
 		flex-direction: column;
 		padding-inline: 0;
