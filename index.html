@@ -85,10 +85,13 @@
 			</button>
 		</div>
 	</div>
-	<section id="about">
+	<div id="about">
 		<div class="picture left">
-			<img class="nina-image" srcset="./assets/images/nina-desktop.webp 560w, ./assets/images/nina-mobile.webp 278w"
-     					sizes="(min-width: 413px) 560px, (min-width: 0px) 278px" src="./assets/images/nina-desktop.webp" alt="Photo de Nina Carducci" />
+			<picture>
+				<source media="(max-width: 413px)" srcset="./assets/images/nina-mobile.webp" width=278 height=277/>
+				<source media="(min-width: 414px)" srcset="./assets/images/nina-desktop.webp" width=100% height=auto/>
+				<img src="./assets/images/nina-desktop.webp" alt="Photo de Nina Carducci" width=100% height=auto/>
+			</picture>
 		</div>
 		<div id="about-me">
 			<h2 class="about-me__title">A propos de moi</h2>
@@ -96,7 +99,7 @@
 			<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n'avons qu'une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 				C'est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l'amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 		</div>
-	</section>
+	</div>
 	<div id="gallery">
 		<h1 class="title h3">Portfolio</h1>
 		<div class="container py-3">
@@ -112,14 +115,14 @@
 				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="Photo d'une femme devant son ordinateur" loading="lazy">
 			</div>
 		</div>
-		<div class="quote">
-			<figure>
-				<blockquote>
-					<p class="quote__text h1">Un portrait n'est pas une ressemblance. Dès lors qu'une émotion ou qu'un fait est traduit en photo, il cesse d'être un fait pour devenir une opinion. L'inexactitude n'existe pas en photographie. Toutes les photos sont exactes. Aucune d'elles n'est la vérité.</p>
-				</blockquote>
-				<figcaption class="quote__author">- Richard Avedon</figcaption>
-			</figure>
-		</div>
+	</div>
+	<div class="quote">
+		<figure>
+			<blockquote>
+				<p class="quote__text h1">Un portrait n'est pas une ressemblance. Dès lors qu'une émotion ou qu'un fait est traduit en photo, il cesse d'être un fait pour devenir une opinion. L'inexactitude n'existe pas en photographie. Toutes les photos sont exactes. Aucune d'elles n'est la vérité.</p>
+			</blockquote>
+			<figcaption class="quote__author">- Richard Avedon</figcaption>
+		</figure>
 	</div>
 	<div id="services">
 		<h2 class="title h3">Mes services</h2>
