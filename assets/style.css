@@ -167,7 +167,9 @@ body {
 	font-weight: 800;
 	font-size: 22px;
 }
-
+.question {
+	font-size: calc(1.3rem + 0.6vw);
+}
 #services {
 	margin: auto;
 	display: flex;
@@ -344,6 +346,9 @@ input[type="submit"] {
 }
 
 @media (max-width: 650px) {
+	.top-header .name {
+		font-size: 20px;
+	}
 	.top-header {
 		flex-direction: column;
 		padding-inline: 0;
