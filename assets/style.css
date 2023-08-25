@@ -96,6 +96,7 @@ body {
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
+	font-size: 1rem;
 }
 #about-me p {
 	width: 80%;
@@ -104,6 +105,7 @@ body {
 .title{
 	text-align: center;
 	padding-block: 2em;
+	font-size: 1.75rem;
 }
 .gallery .nav {
 	justify-content: center;
@@ -115,6 +117,9 @@ body {
 }
 .nav-pills .nav-link {
 	color: #000
+}
+.nav-item {
+	cursor: pointer;
 }
 .item-column {
 	position: relative;
@@ -155,7 +160,7 @@ body {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
-
+	font-size: 2.5rem;
 }
 .quote__author {
 	font-family: Spectral;
